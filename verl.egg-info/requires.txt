@@ -1,0 +1,9 @@
+ray==2.43.0
+cupy-cuda12x==13.4.0
+vllm==0.7.3
+setuptools
+debugpy==1.8.0
+
+[test]
+pytest
+yapf

@@ -1,0 +1,178 @@
+[36m(NCCLActor pid=86720, ip=100.95.206.45)[0m TGRIGGS: 10 Python version: 3.11.8 (main, Feb 26 2024, 21:39:34) [GCC 11.2.0] CuPy version: 13.1.0 CUDA runtime version: 12040 NCCL version:22501 Ray version: 3.0.0.dev0
+[36m(NCCLActor pid=3115483)[0m Rank 0 using provided unique id.
+[36m(NCCLActor pid=3115483)[0m Rank 0 creating NCCL communicator with 16 total ranks
+[36m(NCCLActor pid=3115479)[0m TGRIGGS: 6 Python version: 3.11.8 (main, Feb 26 2024, 21:39:34) [GCC 11.2.0] CuPy version: 13.1.0 CUDA runtime version: 12040 NCCL version:22501 Ray version: 3.0.0.dev0[32m [repeated 15x across cluster] (Ray deduplicates logs by default. Set RAY_DEDUP_LOGS=0 to disable log deduplication, or see https://docs.ray.io/en/master/ray-observability/user-guides/configure-logging.html#log-deduplication for more options.)[0m
+[36m(NCCLActor pid=86715, ip=100.95.206.45)[0m Rank 15 using provided unique id.[32m [repeated 8x across cluster][0m
+[36m(NCCLActor pid=86715, ip=100.95.206.45)[0m Rank 15 creating NCCL communicator with 16 total ranks[32m [repeated 8x across cluster][0m
+[36m(NCCLActor pid=3115483)[0m Rank 0 DONE creating NCCL communicator
+[36m(NCCLActor pid=3115486)[0m Rank 2 about to broadcast int
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3115485 [0] NCCL INFO NCCL_SOCKET_IFNAME set to ^lo,docker,veth,tailscale,anyscale
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3115485 [0] NCCL INFO NCCL version 2.25.1+cuda12.8
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3115485 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. Using internal network plugin.
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3115485 [0] NCCL INFO NCCL_IB_HCA set to mlx5_15, mlx5_17
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3115485 [0] NCCL INFO NET/IB : Made virtual device [0] name=mlx5_15 speed=200000 ndevs=1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3115485 [0] NCCL INFO NET/IB : Using [0]mlx5_15:1/RoCE [RO]; OOB rdma0:10.224.0.32<0>
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3115485 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 0 'mlx5_15'
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3115485 [0] NCCL INFO NET/IB : Made virtual device [1] name=mlx5_15 speed=200000 ndevs=1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3115485 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 0 'mlx5_15'
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3115485 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 1 'mlx5_15'
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3115485 [0] NCCL INFO Connected to proxy localRank 0 -> connection 0x7f2a9c004e98
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 0 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d54004d30
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 1 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d54004da8
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 2 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d54004e20
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 3 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d54004e98
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 4 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d54004f10
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 5 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d54004f88
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 6 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d54005000
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 7 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d54005078
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 8 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d540050f0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 9 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d54005168
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 10 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d540051e0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 11 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d54005258
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 12 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -> connection 0x7f6d540052d0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy send connection 13 from local rank 4, transport 0
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Connected to proxy localRank 4 -
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 0 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 1 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 2 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 3 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 4 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 5 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 6 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 7 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 8 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 9 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 10 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 11 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 12 from local rank 7, transport 0
+[36m(NCCLActor pid=3115482)[0m lambda-oci-gtfsa:3115482:3116610 [0] NCCL INFO New proxy recv connection 13 from local rank 7, transport 0
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Channel 00/0 : 5[5] -> 14[6] [send] via NET/IB/1
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Channel 01/0 : 5[5] -> 14[6] [send] via NET/IB/1
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Channel 02/0 : 5[5] -> 14[6] [send] via NET/IB/1
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Channel 03/0 : 5[5] -> 14[6] [send] via NET/IB/1
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Channel 04/0 : 5[5] -> 14[6] [send] via NET/IB/1
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Channel 05/0 : 5[5] -> 14[6] [send] via NET/IB/1
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Channel 06/0 : 5[5] -> 14[6] [send] via NET/IB/1
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Channel 07/0 : 5[5] -> 14[6] [send] via NET/IB/1
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Channel 08/0 : 5[5] -> 14[6] [send] via NET/IB/1
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Connected to proxy local
+[36m(NCCLActor pid=3115485)[0m > connection 0x7f6d54005348
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Channel 00/0 : 11[4] -> 4[4] [receive] via NET/IB/1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Channel 01/0 : 11[4] -> 4[4] [receive] via NET/IB/1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Channel 02/0 : 11[4] -> 4[4] [receive] via NET/IB/1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Channel 03/0 : 11[4] -> 4[4] [receive] via NET/IB/1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Channel 04/0 : 11[4] -> 4[4] [receive] via NET/IB/1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Channel 05/0 : 11[4] -> 4[4] [receive] via NET/IB/1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Channel 06/0 : 11[4] -> 4[4] [receive] via NET/IB/1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Channel 07/0 : 11[4] -> 4[4] [receive] via NET/IB/1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Channel 08/0 : 11[4] -> 4[4] [receive] via NET/IB/1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Channel 09/0 : 11[4] -> 4[4] [receive] via NET/IB/1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116624 [0] NCCL INFO Channel 10/0 : 11[4] -> 4[4] [receive] via NET/IB/1
+[36m(NCCLActor pid=3115485)[0m lambda-oci-gtfsa:3115485:3116609 [0] NCCL INFO New proxy recv connection 28 from local ran
+[36m(NCCLActor pid=3115483)[0m la
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 0 'mlx5_15'
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 0 'mlx5_15'
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 1 'mlx5_15'
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 8 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 9 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 10 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 12 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 14 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 11 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 13 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 15 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 8 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 9 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 10 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 12 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 14 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 11 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 13 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:86718 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 15 / HCA 1 (distance 3 <= 4), read 0
+[36m(NCCLActor pid=86713, ip=100.95.206.45)[0m lambda-oci-tmjox:86
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO New proxy send connection 10 from local r
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m x7f8ad8004f88
+[36m(NCCLActor pid=86718, ip=100.95.206.45)[0m lambda-oci-tmjox:86718:87764 [0] NCCL INFO Connected to proxy localRa
+[36m(NCCLActor pid=86719, ip=100.95.206.45)[0m x7effa8004f88
+[36m(NCCLActor pid=3115481)[0m Rank 5 -> connection 0x7f9c88005168
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Connected to proxy local
+[36m(NCCLActor pid=86720, ip=100.95.206.45)[0m x7fb3c0004f88
+[36m(NCCLActor pid=86714, ip=100.95.206.45)[0m 4f4005168
+[36m(NCCLActor pid=86717, ip=100.95.206.45)[0m x7fbdd0004f88
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m ank 3, transport 2
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:867
+[36m(NCCLActor pid=3115481)[0m Rank 5 -> connection 0x7f9c880058e8
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 2473 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/200DE00AFFFF0000) fifoRkey=0x151c1b fifoLkey=0x151c1b
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 2474 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/200DE00AFFFF0000) fifoRkey=0x15100f fifoLkey=0x15100f
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 2475 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/200DE00AFFFF0000) fifoRkey=0x150403 fifoLkey=0x150403
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 2476 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/200DE00AFFFF0000) fifoRkey=0x14f8f7 fifoLkey=0x14f8f7
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 2477 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/200DE00AFFFF0000) fifoRkey=0x14edec fifoLkey=0x14edec
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 2478 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/200DE00AFFFF0000) fifoRkey=0x14e1e0 fifoLkey=0x14e1e0
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 2479 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/200DE00AFFFF0000) fifoRkey=0x14d5d4 fifoLkey=0x14d5d4
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 2480 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/200DE00AFFFF0000) fifoRkey=0x14c9c8 fifoLkey=0x14c9c8
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 2481 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/200DE00AFFFF0000) fifoRkey=0x149897 fifoLkey=0x149897
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 2482 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/200DE00AFFFF0000) fifoRkey=0x142b23 fifoLkey=0x142b23
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 2483 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/200DE00AFFFF0000) fifoRkey=0x141816 fifoLkey=0x141816
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116614 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m Rank 14 using provided unique id.[32m [repeated 7x across cluster][0m
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m Rank 14 creating NCCL communicator with 16 total ranks[32m [repeated 7x across cluster][0m
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] N
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m CCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 1829 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/7F0DE00AFFFF0000) fifoRkey=0x6f9f6 fifoLkey=0x6f9f6
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2489 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2491 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2493 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2495 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2497 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2499 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2501 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2503 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2505 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2507 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2509 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2511 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2513 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0 Port 1 qpn 2515 set_ece={supported=1, vendor_id=0x15b3, options=0x0, comp_mask=0x0}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: IbDev 0
+[36m(NCCLActor pid=3115483)[0m Rank 0 DONE broadcasting int
+[36m(NCCLActor pid=3115483)[0m Rank 0 about to broadcast dict
+[36m(NCCLActor pid=3115483)[0m Rank 0 DONE broadcasting dict
+[36m(NCCLActor pid=3115483)[0m Rank 0 received dictionary: {'message': 'Hello from rank 0', 'value': 123}
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m Rank 14 DONE creating NCCL communicator[32m [repeated 15x across cluster][0m
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m Rank 14 about to broadcast int[32m [repeated 15x across cluster][0m
+[36m(NCCLActor pid=86715, ip=100.95.206.45)[0m lambda-oci-tmjox:86715:86715 [0] NCCL INFO NCCL_SOCKET_IFNAME set to ^lo,docker,veth,tailscale,anyscale[32m [repeated 15x across cluster][0m
+[36m(NCCLActor pid=86715, ip=100.95.206.45)[0m lambda-oci-tmjox:86715:86715 [0] NCCL INFO NCCL version 2.25.1+cuda12.8[32m [repeated 15x across cluster][0m
+[36m(NCCLActor pid=86715, ip=100.95.206.45)[0m lambda-oci-tmjox:86715:86715 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. Using internal network plugin.[32m [repeated 15x across cluster][0m
+[36m(NCCLActor pid=86715, ip=100.95.206.45)[0m lambda-oci-tmjox:86715:86715 [0] NCCL INFO NCCL_IB_HCA set to mlx5_15, mlx5_17[32m [repeated 15x across cluster][0m
+[36m(NCCLActor pid=86715, ip=100.95.206.45)[0m lambda-oci-tmjox:86715:86715 [0] NCCL INFO NET/IB : Made virtual device [1] name=mlx5_15 speed=200000 ndevs=1[32m [repeated 30x across cluster][0m
+[36m(NCCLActor pid=86715, ip=100.95.206.45)[0m lambda-oci-tmjox:86715:86715 [0] NCCL INFO NET/IB : Using [0]mlx5_15:1/RoCE [RO]; OOB rdma0:10.224.0.127<0>[32m [repeated 15x across cluster][0m
+[36m(NCCLActor pid=3115483)[0m lambda-oci-gtfsa:3115483:3115483 [0] NCCL INFO NET/IB : GPU Direct RDMA Disabled for HCA 1 'mlx5_15'[32m [repeated 21x across cluster][0m
+[36m(NCCLActor pid=3115484)[0m lambda-oci-gtfsa:3115484:3116628 [0] NCCL INFO Connected to proxy localRank 2 -> connection 0x7f9380005c30[32m [repeated 444x across cluster][0m
+[36m(NCCLActor pid=3115484)[0m lambda-oci-gtfsa:3115484:3116612 [0] NCCL INFO New proxy send connection 32 from local rank 2, transport 0[32m [repeated 232x across cluster][0m
+[36m(NCCLActor pid=3115480)[0m lambda-oci-gtfsa:3115480:3116630 [0] NCCL INFO Connected to proxy localRank 3 -[32m [repeated 5x across cluster][0m
+[36m(NCCLActor pid=3115484)[0m lambda-oci-gtfsa:3115484:3116612 [0] NCCL INFO New proxy recv connection 15 from local rank 1, transport 0[32m [repeated 211x across cluster][0m
+[36m(NCCLActor pid=3115481)[0m lambda-oci-gtfsa:3115481:3116626 [0] NCCL INFO Channel 15/0 : 5[5] -> 14[6] [send] via NET/IB/1[32m [repeated 23x across cluster][0m
+[36m(NCCLActor pid=3115484)[0m > connection 0x7f014c005348[32m [repeated 5x across cluster][0m
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87767 [0] NCCL INFO Channel 15/0 : 5[5] -> 14[6] [receive] via NET/IB/1/GDRDMA[32m [repeated 16x across cluster][0m
+[36m(NCCLActor pid=3115484)[0m la[32m [repeated 5x across cluster][0m
+[36m(NCCLActor pid=86715, ip=100.95.206.45)[0m lambda-oci-tmjox:86715:86715 [0] NCCL INFO NET/IB : GPU Direct RDMA Enabled for HCA 1 'mlx5_15'[32m [repeated 21x across cluster][0m
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87767 [0] NCCL INFO GPU Direct RDMA Enabled for GPU 14 / HCA 1 (distance 3 <= 4), read 0[32m [repeated 144x across cluster][0m
+[36m(NCCLActor pid=86715, ip=100.95.206.45)[0m lambda-oci-tmjox:86715:87766 [0] NCCL INFO Connected to proxy localRa[32m [repeated 5x across cluster][0m
+All results: [{'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}, {'message': 'Hello from rank 0', 'value': 123}]
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m lambda-oci-tmjox:86716:87743 [0] NCCL INFO NET/IB: NCCL Dev 1 IbDev 0 Port 1 qpn 1837 mtu 5 query_ece={supported=1, vendor_id=0x15b3, options=0x30000000, comp_mask=0x0} GID 3 (0/7F0DE00AFFFF0000) fifoRkey=0x76463 fifoLkey=0x76463[32m [repeated 15x across cluster][0m
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m Rank 14 DONE broadcasting int[32m [repeated 15x across cluster][0m
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m Rank 14 about to broadcast dict[32m [repeated 15x across cluster][0m
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m Rank 14 DONE broadcasting dict[32m [repeated 15x across cluster][0m
+[36m(NCCLActor pid=86716, ip=100.95.206.45)[0m Rank 14 received dictionary: {'message': 'Hello from rank 0', 'value': 123}[32m [repeated 15x across cluster][0m
